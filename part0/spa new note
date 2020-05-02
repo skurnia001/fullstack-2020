@@ -1,0 +1,24 @@
+note over browser:
+user types comment
+to the text field
+end note
+
+note over browser:
+user clicks
+submit button
+end note
+
+note over browser:
+new note appended to
+the list of notes,
+page rerendered
+end note
+
+browser -> server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+server add new note
+to list of notes 
+end note
+
+server -> browser: Status Code 201
